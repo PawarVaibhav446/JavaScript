@@ -1,0 +1,46 @@
+
+<-- NOTES OF JAVASCRIPT-->
+
+"Everything in JavaScript happens inside an Execution Context"
+
+Execution Context => 1) Memory(Variables and Functions are stored) also known as Variable environment.
+Execution Context => 2) Code(Code is Executed(one line at a time)) also known as Thread of Execution.
+
+"JavaScript is a Synchronous Single-Threaded Language"
+ => Only Execute one command at a time in a specific order.
+
+Q. What Happens When We Run A JavaScript Program ?
+
+Example:
+
+var n = 2;
+function square(num) {
+    var ans = num * num;
+    return ans;
+}
+var square2 = square(n);
+var square4 = square(4);
+
+Ans: 
+
+A) Memory Phase
+ 1) Memory Allocation is Done of Variables and Functions.
+ 2) Variable(Memory stores a special value which is known as "undefined").
+ 3) Functions(Memory stores whole "code").
+
+B) Code Execution Phase
+ 1) Value of Variables changes according to the identifier.
+ 2) After function invoke new Execution Context(Memory and Code)will be created.
+  i)  (Phase1)Memory will be Allocated to ans and num which will be "undefined".
+  ii) (Phase2)Each line will be Executed.
+ 3) Execution Context Will be Deleted.
+
+ Call Stack => It is a Stack(Global Execution Context is present at the bottom of the Stack).
+ "Call Stack maintains the order of Execution of Execution Contexts".
+
+ Different Names of Call Stack:
+ 1) Execution Context Stack
+ 2) Program Stack
+ 3) Control Stack
+ 4) Runtime Stack
+ 5) Machine Stack
