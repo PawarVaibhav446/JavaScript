@@ -1,0 +1,42 @@
+
+Example:
+
+var x = 1;
+a();
+b();
+console.log(x);
+
+function a() {
+    var x = 10;
+    console.log(x);
+}
+
+function b() {
+    var x = 100;
+    console.log(x);
+}
+
+
+If Same Name of variable is used in functions then how does JavaScript Handles it?
+=> Execution Context is Created 
+Memory will be allocated before running code.
+Memory will be allocated to x(variable),a(function),b(function).
+x: undefined
+a():  will point towards the function
+b():  will point towards the function
+
+In Call Stack, Global Execution Context will be present. 
+
+Now x = 1
+
+a() will be invoked and Execution Context will be Created with two phases.
+Execution Context Will be Pushed into the Call Stack.
+Now x = 10
+It will print 10 in console and the Execution Context will be gone. 
+
+b() will be invoked and Execution Context will be Created with two phases.
+Execution Context Will be Pushed into the Call Stack.
+Now x = 100
+It will print 100 in console and the Execution Context will be gone. 
+
+It will print 1 in console and the Global Execution Context will be gone.

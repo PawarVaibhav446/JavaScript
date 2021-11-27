@@ -44,3 +44,9 @@ B) Code Execution Phase
  3) Control Stack
  4) Runtime Stack
  5) Machine Stack
+
+ Hoisting in JavaScript: "It is a phenomenon in which we can access varibales and functions before intiazlizing it"
+
+Difference between 'not defined' & 'undefined' => 
+ 'not defined' => Not present in the Memory
+ 'undefined' => Not intialized
