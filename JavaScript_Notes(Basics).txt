@@ -48,5 +48,24 @@ B) Code Execution Phase
  Hoisting in JavaScript: "It is a phenomenon in which we can access varibales and functions before intiazlizing it"
 
 Difference between 'not defined' & 'undefined' => 
- 'not defined' => Not present in the Memory
- 'undefined' => Not intialized
+ 'not defined' => Not present in the Memory.
+ 'undefined' => Not intialized but Memory is Allocated. 
+
+ Example:
+
+ console.log(a); // undefined
+ var a = 7;
+ console.log(a);  
+ console.log(x); // Not defined
+
+ "JavaScript is a Loosely/Weakly Type Language"
+
+ Example:
+
+ var b;
+ console.log(b);
+ b = 10;
+ console.log(b);
+ b = "Hello World";
+ console.log(b);
+
