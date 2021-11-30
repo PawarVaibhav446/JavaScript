@@ -1,0 +1,7 @@
+Block:
+"A Block is Defined by two curly bracket{}"
+
+"It is Also known as Compound Statement"
+=> as it groups multiple JavaScript Statement.
+
+"We Group multiple Statement in a Block so that we can use it where JavaScript expects one Statement"

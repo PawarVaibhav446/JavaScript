@@ -1,0 +1,55 @@
+'let & const declarations are Hoisted'
+
+=> let & const are placed in different memory space.
+   it is not present in global or window object.
+
+Example:
+
+console.log(b); // Undefined
+console.log(a); // (Refernce error) cannot access 'a' before intialization
+let a = 10;
+var b = 100;
+
+"Temporial dead zone" 
+=> is a time since when the let variable is hoisted 
+   and till it is intialzed some value. 
+   The time between is called Temporial dead zone.
+
+"No Duplication is allowed in let declarations"
+
+Example:
+
+let a = 10;
+let a = 12; // (SyntaxError): redeclaration of let 'a'.
+
+we Cant use var a = 10; also !!!.
+
+
+"Const Is More Strict than let"
+
+Example:
+
+let a;
+a = 100;  // This is Possible
+console.log(a);
+
+const b;  // SyntaxError: missing = in const declaration
+b = 12;   // This is not Possible 
+console.log(b);
+
+const b = 12; // This is Possible
+ b = 10;      // TypeError
+
+Difference between SyntaxError v/s RefernceError v/s TypeError
+
+=> TypeError: We cannot change value to type constant.
+=> SyntaxError: Error/missing/Duplication in Syntax (e.g. const b; (no '=')).
+=> RefernceError: When we cannot access variable before intialization or access any undefined varaibles.
+
+
+What Should we use between 'let','const' and 'var' ?
+=> Priority Should be 1)const 2)let 3)var
+
+How to Avoid problems related to Temporial dead zone?
+=> You Should always declare your variables at the start of the program(at the top).
+
