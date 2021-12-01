@@ -4,4 +4,54 @@ Block:
 "It is Also known as Compound Statement"
 => as it groups multiple JavaScript Statement.
 
-"We Group multiple Statement in a Block so that we can use it where JavaScript expects one Statement"
+Why Do We Use Block?
+=> "We Group multiple Statement in a Block so that we can use it where JavaScript expects one Statement"
+
+Example:
+
+if(true){
+    var a = 10;
+    console.log(a);
+}
+
+What is Block Scope?
+=> What all variable & functions we can access inside this Block.
+
+Example:
+
+{
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+=> Here 'a' is hoisted in Global Scope while 'b' & 'c' are placed in Block.
+   Here 'b' will be not defined (refrence error) if we access 'b' outside the Block.
+
+"Shadowing In JavaScript"
+=> If we have same name variable outside the Block then it Shadows it.
+=> 'let' and 'const' have 'Script' Shadowing rather than 'Block' scope while for 'var' it is opposite.
+
+"Illegal Shadowing"
+=> We Cannot change the identifiers.
+
+Example:
+
+let x = 20;
+{
+    var x = 30;
+}
+
+But We Can do This:
+
+var x = 20;
+{
+    let x = 30;
+}

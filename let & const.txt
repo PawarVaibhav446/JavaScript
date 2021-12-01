@@ -1,4 +1,5 @@
 'let & const declarations are Hoisted'
+ They are Block Scoped.
 
 => let & const are placed in different memory space.
    it is not present in global or window object.
