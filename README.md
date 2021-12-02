@@ -1,2 +1,6 @@
 # JavaScript
-Learning From Akshay Saini Yt Channel
+Learning JavaScript.
+Always Felt Js is to complex for me ...
+But watching tutorials of Akshay Saini has changed my mind.
+
+I have Started Loving Js
