@@ -2,3 +2,13 @@ What is Closure ?
 => "function bundled along with its lexical scope forms Closure".
 => "It has access to its parent lexical scope".
 
+Note => "function when they are returned from another function they still remembers its lexical scope."
+  
+Uses of Closures:
+1) Module Design Pattern
+2) Currying
+3) functions like once
+4) Memoize
+5) maintaning state in async world
+6) setTimeouts
+7) Iterators
