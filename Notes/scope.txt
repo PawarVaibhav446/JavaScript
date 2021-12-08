@@ -2,6 +2,8 @@ What Is Scope?
 => Scope means where you can access a specific variable or function in our code.
 
 Two Aspects =>
+
 What is the Scope of this Variable?
 Is This Variable in the Scope of the function?
+
 
