@@ -1,5 +1,8 @@
 What Is Scope?
 => Scope means where you can access a specific variable or function in our code.
+=> Scope is determined Lexically.
+=> JavaScript uses function Scope.
+=> Nested functions cretes Scope chain.
 
 Two Aspects =>
 
