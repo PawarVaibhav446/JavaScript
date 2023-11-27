@@ -1,5 +1,5 @@
 # JavaScript
 Learning JavaScript.
-Always Felt Js is to complex for me.
+Always Felt JS is to complex for me.
 
-Now I have Started Loving Js.
+Now I have Started Loving JavaScript.
