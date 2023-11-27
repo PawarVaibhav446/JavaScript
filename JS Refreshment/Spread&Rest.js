@@ -11,3 +11,4 @@ const newArray = [...oldArray, 6, 7]
 function sortArgs(...args){
     return args.sort();
 }
+

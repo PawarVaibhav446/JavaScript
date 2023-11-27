@@ -16,14 +16,16 @@
         let x = 2;
        }
        x can NOT be used outside this block.
-*/ 
+*/
 
 // Redeclaring a variable with let, in another block, IS allowed:
 
 let x = 3;
+
 {
     let x = 5;
 }
+
 {
     let x = 4;
 }
@@ -42,7 +44,7 @@ console.log(name2);
 // Constant Arrays => You can change the elements of a constant array
 // But you can NOT reassign the array:
 
-const bikes = ['BMW','HERO','HONDA'];
+const bikes = ['BMW', 'HERO', 'HONDA'];
 bikes[0] = 'KTM';
 bikes.push('DUKE');
 console.log(bikes);
